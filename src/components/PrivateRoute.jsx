@@ -4,7 +4,6 @@ import useAuth from "../hooks/useAuth";
 
 const ProtectedRoute = ({ children }) => {
   const { isAuthenticated, loading } = useAuth();
-  console.log(isAuthenticated);
 
   if (loading) return "Loading Please Wait....";
 
