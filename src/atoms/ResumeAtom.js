@@ -13,109 +13,89 @@ const defaultData = {
     "Vue,js",
     "Firebase",
     "AWS",
-    "Cloud Computing",
     "Docker",
     "Redis",
     "Kubernetes",
     "Android",
     "Java",
     "Kotlin",
+    "SQL",
+    "MongoDB",
   ],
   experience: [
     {
-      title: "Web Developer",
-      company: "ABC Company",
+      title: "Software Development Intern",
+      company: "Inofinity RND Pvt Ltd.",
       description: [
-        "Developed and maintained for my company website,",
-        "Implemented responsive design with optimizing performance.",
-        "Collaborated with the design team to create visually appealing web pages.",
+        "Developed many android apps and integrated with Arduino(Hardware)",
+        "Worked on the frontend and backend of the app along with many API implementation using Retrofit library",
       ],
-      dateJoining: "01/2020",
-      dateLeaving: "Present",
+      dateJoining: "09/2021",
+      dateLeaving: "07/2022",
       location: "Bhubaneswar,OD",
     },
     {
-      title: "Frontend Developer",
-      company: "XYZ Agency",
+      title: "Freelance Android Developer",
+      company: "NIARA HOTEL",
       description: [
-        "Worked on various client projects,",
-        "translating design mockups into interactive web pages.",
-        "Utilized modern web technologies to ensure cross-browser compatibility.",
+        "Developed a Native Android App(Java) forthe sole purpose of the distribution of food items.",
+        "Worked on different API’s implement to make the app faster and smoother to enhance the ux experience.",
+        "Worked on Room Database for database implementation, Retrofit for making API calls and Material UI forthe overall UI/UX of the app",
       ],
-      dateJoining: "06/2019",
-      dateLeaving: "11/2019",
-      location: "Remote",
-    },
-    {
-      title: "Frontend Developer",
-      company: "XYZ Agency",
-      description: [
-        "Worked on various client projects,",
-        "translating design mockups into interactive web pages.",
-        "Utilized modern web technologies to ensure cross-browser compatibility.",
-      ],
-      dateJoining: "06/2019",
-      dateLeaving: "11/2019",
-      location: "Remote",
+      dateJoining: "05/2021",
+      dateLeaving: "08/2021",
+      location: "Bhubaneswar,OD",
     },
   ],
   projects: [
     {
-      title: "E-commerce Website",
-      link: "http://www.github.com/Rudra-cs/",
+      title: "CONTACT MANAGER",
+      link: "https://www.github.com/Rudra-cs/contact-manager",
       description: [
-        "Built a responsive e-commerce website using React",
-        "and integrated payment processing.",
-        "Built a responsive e-commerce website using React",
-        "and integrated payment processing.",
+        "Developed an web app which stores user’s contact details of other people stored in the database(mongodb).",
+        "Worked on Node.js as it’s backend server and Angular.js as it’s frontend along  with MongoDb as it’s Database which is hosted in the cloud server.",
       ],
-      skills: "React, JavaScript, Responsive Design",
-      date: "2022",
+      skills: "MongoDB, Angular, JavaScript, Node.js, Express.js",
     },
     {
-      title: "Portfolio Website",
-      link: "john.doe@example.com",
+      title: "SHEETS",
+      link: "https://www.github.com/Rudra-cs/sheets",
       description: [
-        "Built a responsive e-commerce website using React",
-        "and integrated payment processing.",
-        "Built a responsive e-commerce website using React",
-        "and integrated payment processing.",
+        " Implemented a robust two-way binding mechanism for seamless data synchronization between the UI and storage (Cell Properties).",
+        " Developed efficient storage manipulation features, including cycle validation, colortracking and support for multiple sheets.",
       ],
-      skills: "HTML/CSS, JavaScript, React",
-      date: "2021",
+      skills: "HTML/CSS, JavaScript",
     },
     {
-      title: "Portfolio Website",
-      link: "john.doe@example.com",
+      title: "ALERT NEWS",
+      link: "https://www.github.com/Rudra-cs/alert-news",
       description: [
-        "Built a responsive e-commerce website using React",
-        "and integrated payment processing.",
-        "Built a responsive e-commerce website using React",
-        "and integrated payment processing.",
+        " Developed an Android App which fetch news from which news websites through an API and populate the app with the news",
+        "Worked on Room DB to store the liked news to be read afterwards, also used Coroutines for Asynchronous work",
+        "The app is based on MVVM Architecture, also many otherlibraries are used like Glide etc.",
       ],
-      skills: "HTML/CSS, JavaScript, React",
-      date: "2021",
+      skills: "Android, Kotlin, MVVM, RoomDB, Glide",
     },
   ],
   education: [
     {
-      degree: "Bachelor of Science in Computer Science",
-      institution: "University of Example",
-      joiningDate: "2017",
-      graduationDate: "2018",
+      degree: "Bachelor of Technology in Computer Science & Engg.",
+      institution: "SILICON INSTITUTE OF TECHNOLOGY",
+      joiningDate: "2019",
+      graduationDate: "2023",
     },
     {
-      degree: "Bachelor of Science in Computer Science",
-      institution: "University of Example",
-      joiningDate: "2017",
-      graduationDate: "2018",
+      degree: "Intermediate/HSC (+2 Science)",
+      institution: "B.J.B. JUNIOR COLLEGE",
+      joiningDate: "2015",
+      graduationDate: "2017",
     },
   ],
   personalInformation: {
     name: "Rudra Prasad Behera",
     role: "Software Engineer",
     summary:
-      "Experienced web developer with a passion for creating responsive and user-friendly websites. Proficient in HTML, CSS, JavaScript, and various web development frameworks.",
+      "I'm a Software Developer with a passion for creating exceptional applications that not only work seamlessly but also offer an outstanding user experience. I believe development is more than just coding; it's about crafting intuitive interfaces, designing smooth interactions, and ensuring every aspect aligns with user needs and expectations.",
     email: "rudra.behera50@gmail.com",
     phoneNo: "0123 2020 9876",
     location: "Bhubaneswar, OD",
@@ -130,73 +110,3 @@ export const dataState = atom({
   key: "dataState",
   default: localStorageData,
 });
-
-// export const skillsSelector = selector({
-//   key: "skillsSelector",
-//   get: ({ get }) => {
-//     const data = get(dataState);
-//     return data.skills;
-//   },
-//   set: ({ set, get }, newValue) => {
-//     const data = get(dataState) || {};
-//     const newData = { ...data, skills: newValue };
-//     set(dataState, newData);
-//     localStorage.setItem("data", JSON.stringify(newData));
-//   },
-// });
-
-// export const experienceSelector = selector({
-//   key: "experienceSelector",
-//   get: ({ get }) => {
-//     const data = get(dataState);
-//     return data.experience;
-//   },
-//   set: ({ set, get }, newValue) => {
-//     const data = get(dataState);
-//     const newData = { ...data, experience: newValue };
-//     set(dataState, newData);
-//     localStorage.setItem("data", JSON.stringify(newData));
-//   },
-// });
-
-// export const projectsSelector = selector({
-//   key: "projectsSelector",
-//   get: ({ get }) => {
-//     const data = get(dataState);
-//     return data.projects;
-//   },
-//   set: ({ set, get }, newValue) => {
-//     const data = get(dataState);
-//     const newData = { ...data, projects: newValue };
-//     set(dataState, newData);
-//     localStorage.setItem("data", JSON.stringify(newData));
-//   },
-// });
-
-// export const educationSelector = selector({
-//   key: "educationSelector",
-//   get: ({ get }) => {
-//     const data = get(dataState);
-//     return data.education;
-//   },
-//   set: ({ set, get }, newValue) => {
-//     const data = get(dataState);
-//     const newData = { ...data, education: newValue };
-//     set(dataState, newData);
-//     localStorage.setItem("data", JSON.stringify(newData));
-//   },
-// });
-
-// export const personalInformationSelector = selector({
-//   key: "personalInformationSelector",
-//   get: ({ get }) => {
-//     const data = get(dataState);
-//     return data.personalInformation;
-//   },
-//   set: ({ set, get }, newValue) => {
-//     const data = get(dataState);
-//     const newData = { ...data, personalInformation: newValue };
-//     set(dataState, newData);
-//     localStorage.setItem("data", JSON.stringify(newData));
-//   },
-// });

@@ -54,7 +54,7 @@ const SkillsComponent = () => {
         />
         <button
           onClick={handleAddSkill}
-          className="bg-blue-500 text-white px-3 py-2 rounded"
+          className="bg-blue-500 text-white px-3 py-2 rounded hover:bg-blue-700 hover:scale-105"
         >
           Add Skill
         </button>

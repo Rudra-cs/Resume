@@ -32,11 +32,11 @@ const Admin = () => {
   return (
     <div className="flex flex-col justify-center items-center ">
       <h1 className="text-3xl m-5 font-semibold ">Resume Builder</h1>
-      <div className="container mx-auto p-4 lg:max-w-screen-lg md:max-w-screen-xl flex-wrap">
+      <div className="container mx-auto p-4 lg:max-w-screen-lg md:max-w-screen-xl ">
         {/* Card-like container for tabs and content */}
-        <div className="bg-gray-100/50 rounded-md shadow-md overflow-hidden">
+        <div className="bg-gray-100/50 rounded-md shadow-md">
           {/* Tabs for different resume sections */}
-          <div className="flex">
+          <div className="flex flex-wrap">
             {tabs.map((tab) => (
               <button
                 key={tab}
