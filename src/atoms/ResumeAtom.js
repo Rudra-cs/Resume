@@ -35,6 +35,17 @@ const defaultData = {
       location: "Bhubaneswar,OD",
     },
     {
+      title: "Web Developer",
+      company: "SOUL Foundation",
+      description: [
+        "Worked on the complete revamp of the website",
+        " Developed different sections of the website along with the team members",
+      ],
+      dateJoining: "05/2021",
+      dateLeaving: "02/2022",
+      location: "Bhubaneswar,OD",
+    },
+    {
       title: "Freelance Android Developer",
       company: "NIARA HOTEL",
       description: [
@@ -89,6 +100,12 @@ const defaultData = {
       institution: "B.J.B. JUNIOR COLLEGE",
       joiningDate: "2015",
       graduationDate: "2017",
+    },
+    {
+      degree: "Matriculation",
+      institution: "Venkateswar English Medium School",
+      joiningDate: "2003",
+      graduationDate: "2015",
     },
   ],
   personalInformation: {
