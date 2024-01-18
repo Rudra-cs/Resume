@@ -83,7 +83,6 @@ const defaultData = {
       description: [
         " Developed an Android App which fetch news from which news websites through an API and populate the app with the news",
         "Worked on Room DB to store the liked news to be read afterwards, also used Coroutines for Asynchronous work",
-        "The app is based on MVVM Architecture, also many otherlibraries are used like Glide etc.",
       ],
       skills: "Android, Kotlin, MVVM, RoomDB, Glide",
     },
